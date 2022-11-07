@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="canteenManager.bills.list.BillListController">
+   <children>
+      <TableView fx:id="tbBills" layoutX="3.0" layoutY="286.0" prefHeight="149.0" prefWidth="594.0">
+        <columns>
+          <TableColumn fx:id="tdIdBill" prefWidth="60.0" text="Mã HD" />
+          <TableColumn fx:id="tdProduct" prefWidth="140.0" text="Sản Phẩm" />
+            <TableColumn fx:id="tdQty" prefWidth="107.0" text="Số Lượng" />
+            <TableColumn fx:id="tdTotal" prefWidth="122.0" text="Thành tiền" />
+            <TableColumn fx:id="tdNote" prefWidth="163.0" text="Ghi chú" />
+        </columns>
+      </TableView>
+      <Button layoutX="294.0" layoutY="225.0" mnemonicParsing="false" onAction="#submit" text="Them" />
+      <TextField fx:id="txtQty" layoutX="36.0" layoutY="139.0" promptText="So luong" />
+<!--      <TextField fx:id="txtTotal" layoutX="36.0" layoutY="187.0" promptText="Thanh tien" />-->
+      <ComboBox fx:id="cbProduct" layoutX="36.0" layoutY="86.0" prefHeight="31.0" prefWidth="186.0" promptText="San pham" />
+      <TextArea fx:id="txtNote" layoutX="264.0" layoutY="41.0" prefHeight="177.0" prefWidth="200.0" promptText="Ghi chu" />
+      <Button onAction="#delete" layoutX="509.0" layoutY="225.0" mnemonicParsing="false" text="Xoa" />
+   </children>
+</Pane>

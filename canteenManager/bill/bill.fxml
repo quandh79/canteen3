@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="canteenManager.bill.BillController">
+    <children>
+        <Text layoutX="20.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã hóa đơn" textAlignment="CENTER" />
+        <Text layoutX="24.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số lượng" />
+        <Text layoutX="20.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sản phẩm" />
+        <Text layoutX="19.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thành tiền" />
+        <TextField fx:id="codeBill" layoutX="173.0" layoutY="20.0" prefHeight="31.0" prefWidth="244.0" />
+        <TextField fx:id="qty" layoutX="173.0" layoutY="100.0" prefHeight="31.0" prefWidth="244.0" />
+        <TextField fx:id="into" layoutX="173.0" layoutY="140.0" prefHeight="31.0" prefWidth="244.0" />
+        <ComboBox fx:id="cbProduct" layoutX="173.0" layoutY="59.0"  prefHeight="31.0" prefWidth="244.0" />
+        <TextArea fx:id="note1" layoutX="510.0" layoutY="16.0" prefHeight="198.0" prefWidth="210.0" promptText="ghi chú" />
+        <TableView  layoutX="13.0" layoutY="287.0" prefHeight="222.0" prefWidth="799.0">
+            <columns>
+                <TableColumn  prefWidth="75.0" text="stt" />
+                <TableColumn  prefWidth="75.0" text="Mã hđ" />
+                <TableColumn  prefWidth="191.0" text="Tên sản phẩm" />
+                <TableColumn  prefWidth="107.0" text="Số lượng" />
+                <TableColumn  prefWidth="109.0" text="Tổng tiền" />
+                <TableColumn  minWidth="0.0" prefWidth="147.0" text="Ngày lập hóa đơn" />
+            <TableColumn  minWidth="0.0" prefWidth="93.0" text="Ghi chú" />
+            </columns>
+        </TableView>
+        <Button layoutX="730.0" layoutY="245.0" mnemonicParsing="false" text="Save" />
+        <Button layoutX="31.0" layoutY="245.0" mnemonicParsing="false" text="Thêm" />
+      <DatePicker layoutX="173.0" layoutY="183.0" prefHeight="31.0" prefWidth="244.0" />
+      <Text layoutX="19.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày lập hóa đơn" />
+    </children>
+</Pane>
